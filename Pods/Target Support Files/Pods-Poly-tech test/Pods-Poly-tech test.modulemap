@@ -1,0 +1,6 @@
+framework module Pods_Poly_tech_test {
+  umbrella header "Pods-Poly-tech test-umbrella.h"
+
+  export *
+  module * { export * }
+}
