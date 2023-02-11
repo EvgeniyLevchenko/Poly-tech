@@ -91,9 +91,11 @@ final class BooksViewController: UIViewController {
 // MARK: Books Display Logic
 extension BooksViewController: BooksDisplayLogic {
     func displayBooks(viewModel: BooksViewModel) {
-        reloadDataSource(with: viewModel)
-        guard let title = viewModel.title else { return }
-        setTitle(title: title)
+        DispatchQueue.main.async {
+            self.reloadDataSource(with: viewModel)
+            guard let title = viewModel.title else { return }
+            self.setTitle(title: title)
+        }
     }
     
     func displayAlert(with title: String, message: String) {

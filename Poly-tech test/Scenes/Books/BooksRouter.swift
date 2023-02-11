@@ -16,12 +16,12 @@ class BooksRouter: NSObject, BooksRoutingLogic, BooksDataPassing {
     func routeToWebViewController(with url: String) {
         guard let url = URL(string: url) else { return }
         let webViewController = WebViewController(url: url)
-        navigateToSomewhere(source: viewController!, destination: webViewController)
+        navigateToWebViewController(source: viewController, destination: webViewController)
     }
     
     // MARK: Navigation
     
-    func navigateToSomewhere(source: BooksViewController?, destination: UIViewController) {
+    func navigateToWebViewController(source: BooksViewController?, destination: UIViewController) {
         source?.present(destination, animated: true)
     }
 }

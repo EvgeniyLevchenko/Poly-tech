@@ -16,7 +16,6 @@ enum Books {
     
     struct Response {
         var booksList: BooksList
-        var sectionIndex: Int
         var error: Error? = nil
     }
     
@@ -36,10 +35,7 @@ enum Books {
                 let publisher = bookInfo.publisher
                 let imageURL = bookInfo.bookImage
                 let rank = bookInfo.rank
-                guard let buyLink = bookInfo.buyLinks.first(where: { buyLink in
-                    let booksServiceName = "Apple Books"
-                    return booksServiceName == buyLink.name
-                }) else {
+                guard let buyLink = bookInfo.buyLinks.first else {
                     return
                 }
                 let buyURL = buyLink.url

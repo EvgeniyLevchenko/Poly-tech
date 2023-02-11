@@ -7,6 +7,7 @@
 
 import UIKit
 import WebKit
+import CoreData
 
 class WebViewController: UIViewController {
     
@@ -32,9 +33,7 @@ class WebViewController: UIViewController {
         webView = WKWebView(frame: .zero)
         webView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(webView)
-        
-        let topPadding = view.safeAreaInsets.top
-        webView.frame = view.frame.inset(by: UIEdgeInsets(top: topPadding, left: CGFloat(0), bottom: CGFloat(0), right: CGFloat(0)))
+        webView.frame = view.bounds
     }
     
     private func loadPage() {

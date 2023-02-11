@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B1243ED29950952009CB7C3 /* BookItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1243EB29950952009CB7C3 /* BookItem+CoreDataClass.swift */; };
+		4B1243EE29950952009CB7C3 /* BookItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1243EC29950952009CB7C3 /* BookItem+CoreDataProperties.swift */; };
+		4B1243F12995096A009CB7C3 /* CategoryItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1243EF2995096A009CB7C3 /* CategoryItem+CoreDataClass.swift */; };
+		4B1243F22995096A009CB7C3 /* CategoryItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1243F02995096A009CB7C3 /* CategoryItem+CoreDataProperties.swift */; };
 		4B30E12129912CB50084525B /* CoreDataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B30E12029912CB50084525B /* CoreDataError.swift */; };
 		4B30E12329912CD00084525B /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B30E12229912CD00084525B /* NetworkError.swift */; };
 		4B30E12529912CF70084525B /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B30E12429912CF70084525B /* CoreDataService.swift */; };
-		4B30E137299131400084525B /* BookItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B30E135299131400084525B /* BookItem+CoreDataClass.swift */; };
-		4B30E138299131400084525B /* BookItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B30E136299131400084525B /* BookItem+CoreDataProperties.swift */; };
-		4B30E13B299131820084525B /* CategoryItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B30E139299131820084525B /* CategoryItem+CoreDataClass.swift */; };
-		4B30E13C299131820084525B /* CategoryItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B30E13A299131820084525B /* CategoryItem+CoreDataProperties.swift */; };
 		4B30E13E2991AC020084525B /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B30E13D2991AC020084525B /* WebViewController.swift */; };
 		4B30E1412991ADA40084525B /* RouterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B30E1402991ADA40084525B /* RouterDelegate.swift */; };
 		4B30E1432991BAD00084525B /* DataStoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B30E1422991BAD00084525B /* DataStoring.swift */; };
@@ -72,13 +72,13 @@
 
 /* Begin PBXFileReference section */
 		0CD6A40B302E3CACA4CDF2C5 /* Pods_Poly_tech_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Poly_tech_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B1243EB29950952009CB7C3 /* BookItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BookItem+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4B1243EC29950952009CB7C3 /* BookItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BookItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4B1243EF2995096A009CB7C3 /* CategoryItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CategoryItem+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4B1243F02995096A009CB7C3 /* CategoryItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CategoryItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		4B30E12029912CB50084525B /* CoreDataError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataError.swift; sourceTree = "<group>"; };
 		4B30E12229912CD00084525B /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		4B30E12429912CF70084525B /* CoreDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
-		4B30E135299131400084525B /* BookItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BookItem+CoreDataClass.swift"; sourceTree = "<group>"; };
-		4B30E136299131400084525B /* BookItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BookItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		4B30E139299131820084525B /* CategoryItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CategoryItem+CoreDataClass.swift"; sourceTree = "<group>"; };
-		4B30E13A299131820084525B /* CategoryItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CategoryItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		4B30E13D2991AC020084525B /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		4B30E1402991ADA40084525B /* RouterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterDelegate.swift; sourceTree = "<group>"; };
 		4B30E1422991BAD00084525B /* DataStoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStoring.swift; sourceTree = "<group>"; };
@@ -171,8 +171,8 @@
 		4B30E12729912F8C0084525B /* BookItem */ = {
 			isa = PBXGroup;
 			children = (
-				4B30E135299131400084525B /* BookItem+CoreDataClass.swift */,
-				4B30E136299131400084525B /* BookItem+CoreDataProperties.swift */,
+				4B1243EB29950952009CB7C3 /* BookItem+CoreDataClass.swift */,
+				4B1243EC29950952009CB7C3 /* BookItem+CoreDataProperties.swift */,
 			);
 			path = BookItem;
 			sourceTree = "<group>";
@@ -180,8 +180,8 @@
 		4B30E12829912F960084525B /* CategoryItem */ = {
 			isa = PBXGroup;
 			children = (
-				4B30E139299131820084525B /* CategoryItem+CoreDataClass.swift */,
-				4B30E13A299131820084525B /* CategoryItem+CoreDataProperties.swift */,
+				4B1243EF2995096A009CB7C3 /* CategoryItem+CoreDataClass.swift */,
+				4B1243F02995096A009CB7C3 /* CategoryItem+CoreDataProperties.swift */,
 			);
 			path = CategoryItem;
 			sourceTree = "<group>";
@@ -569,8 +569,10 @@
 				4BD82F6F298C4DD900E7E871 /* BooksInteractor.swift in Sources */,
 				4B30E14B2991BB4B0084525B /* CategoriesBusinessLogic.swift in Sources */,
 				4BD82F80298C6D5500E7E871 /* UIColor + Extension.swift in Sources */,
+				4B1243EE29950952009CB7C3 /* BookItem+CoreDataProperties.swift in Sources */,
 				4B30E1632991BCFC0084525B /* BooksDataPassing.swift in Sources */,
 				4B4C3EB2298C31900028A512 /* Isbn.swift in Sources */,
+				4B1243ED29950952009CB7C3 /* BookItem+CoreDataClass.swift in Sources */,
 				4B4C3EB4298C31B20028A512 /* BuyLink.swift in Sources */,
 				4BD82F5C298C4CCA00E7E871 /* CategoriesPresenter.swift in Sources */,
 				4BAAEE472991067C004F814C /* UIStackView + Extension.swift in Sources */,
@@ -584,21 +586,20 @@
 				4BD82F6A298C4DD900E7E871 /* BooksPresenter.swift in Sources */,
 				4BD82F89298C713700E7E871 /* UIFont + Extension.swift in Sources */,
 				4B30E1522991BBD80084525B /* BooksDataStore.swift in Sources */,
-				4B30E13B299131820084525B /* CategoryItem+CoreDataClass.swift in Sources */,
+				4B1243F22995096A009CB7C3 /* CategoryItem+CoreDataProperties.swift in Sources */,
 				4BD82F7D298C5EC800E7E871 /* NetworkService.swift in Sources */,
 				4B4C3E9E298C30980028A512 /* Poly_tech_test.xcdatamodeld in Sources */,
 				4BAAEE432990FF45004F814C /* BookCollectionViewCell.swift in Sources */,
-				4B30E138299131400084525B /* BookItem+CoreDataProperties.swift in Sources */,
 				4B30E13E2991AC020084525B /* WebViewController.swift in Sources */,
 				4B30E12129912CB50084525B /* CoreDataError.swift in Sources */,
 				4BD82F6C298C4DD900E7E871 /* BooksRouter.swift in Sources */,
+				4B1243F12995096A009CB7C3 /* CategoryItem+CoreDataClass.swift in Sources */,
 				4B4C3E94298C30980028A512 /* AppDelegate.swift in Sources */,
 				4B4C3E96298C30980028A512 /* SceneDelegate.swift in Sources */,
 				4BD82F6B298C4DD900E7E871 /* BooksWorker.swift in Sources */,
 				4BAAEE45299100BB004F814C /* UIButton + Extension.swift in Sources */,
 				4BD82F87298C712300E7E871 /* UIImageView + Extension.swift in Sources */,
 				4BD82F5F298C4CCA00E7E871 /* CategoriesModels.swift in Sources */,
-				4B30E137299131400084525B /* BookItem+CoreDataClass.swift in Sources */,
 				4B30E1412991ADA40084525B /* RouterDelegate.swift in Sources */,
 				4B30E1462991BB0D0084525B /* CategoriesDisplayLogic.swift in Sources */,
 				4B30E1552991BC070084525B /* CategoriesPresentationLogic.swift in Sources */,
@@ -613,7 +614,6 @@
 				4BD82F60298C4CCA00E7E871 /* CategoriesViewController.swift in Sources */,
 				4BD82F5D298C4CCA00E7E871 /* CategoriesWorker.swift in Sources */,
 				4B9618E9298E712000C23955 /* CategorySection.swift in Sources */,
-				4B30E13C299131820084525B /* CategoryItem+CoreDataProperties.swift in Sources */,
 				4BD82F6D298C4DD900E7E871 /* BooksModels.swift in Sources */,
 				4B30E15C2991BC8D0084525B /* BooksRoutingLogic.swift in Sources */,
 				4B30E12329912CD00084525B /* NetworkError.swift in Sources */,

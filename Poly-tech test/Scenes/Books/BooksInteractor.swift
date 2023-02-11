@@ -16,28 +16,20 @@ class BooksInteractor: BooksBusinessLogic, BooksDataStore {
     
     func getBooks() {
         let worker = BooksWorker()
-        if var response = response {
-            let booksList = response.booksList
-            if !booksList.booksInfo.isEmpty {
-                worker.saveBooks(for: booksList, completion: { error in
-                    if let error = error {
-                        self.response?.error = error
-                    }
-                })
-                presenter?.presentBooksList(response: response)
-                return
+        guard var response = response else { return }
+        let category = response.booksList
+        if !response.booksList.booksInfo.isEmpty {
+            worker.saveBooks(for: category) { error in
+                if let error = error {
+                    response.error = error
+                }
             }
-            
-            worker.getBooks(for: booksList) { result in
+            presenter?.presentBooksList(response: response)
+        } else {
+            worker.getBooks(for: category) { result in
                 switch result {
                 case .success(let books):
                     response.booksList.booksInfo = books
-                    var booksList = response.booksList
-                    booksList.booksInfo = books
-                    let sectionIndex = response.sectionIndex
-                    print("booksp")
-                    print(books)
-                    let response = BooksResponse(booksList: booksList, sectionIndex: sectionIndex)
                     self.presenter?.presentBooksList(response: response)
                 case .failure(let error):
                     response.error = error

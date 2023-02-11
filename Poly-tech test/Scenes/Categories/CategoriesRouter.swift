@@ -37,7 +37,7 @@ class CategoriesRouter: CategoriesRoutingLogic, CategoriesDataPassing {
             return
         }
         
-        let booksResponse = BooksResponse(booksList: booksList, sectionIndex: indexPath.section)
+        let booksResponse = BooksResponse(booksList: booksList)
         destination?.response = booksResponse
     }
 }

@@ -14,7 +14,7 @@ class BookCollectionViewCell: UICollectionViewCell , SelfConfiguring {
     private let activityIndicatorView = UIActivityIndicatorView()
     private let bookNameLabel = UILabel(text: "", font: .avenirMedium18(), numberOfLines: 0)
     private let authorNameLabel = UILabel(text: "", font: .avenir16(), numberOfLines: 0)
-    private let descriptionLabel = UILabel(text: "", font: .avenir16(), numberOfLines: 0)
+    private let descriptionLabel = UILabel(text: "", font: .avenir16(), numberOfLines: 3)
     private let publisherLabel = UILabel(text: "", font: .avenir14(), numberOfLines: 0)
     private let buyButton = UIButton(title: "Buy", titleColor: .white, backgroundColor: .systemBlue)
     private var buyURL = ""
@@ -47,7 +47,7 @@ class BookCollectionViewCell: UICollectionViewCell , SelfConfiguring {
     
     func configure<T>(with value: T) where T : Hashable {
         guard let book: Book = value as? Book else { return }
-        bookNameLabel.text = book.name
+        bookNameLabel.text = "\(book.rank). " + book.name
         authorNameLabel.text = book.author
         descriptionLabel.text = book.description
         publisherLabel.text = book.publisher
